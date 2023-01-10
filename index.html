@@ -27,9 +27,11 @@
     var link = window.location.href.split('=')[1];
     z=document.createElement('zero-md');
     if (link != null){
-      z.src='/'+link+'.md'
+      z.src='/'+link+'.md';
+      document.title=z+' @ DataPub.jcli.site'
     } else {
-      z.src='/readme.md'
+      z.src='/readme.md';
+      document.title='Index @ DataPub.jcli.site | Life Traveler 生活探索者'
     };
     document.body.append(z)
   </script>
