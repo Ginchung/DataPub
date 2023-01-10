@@ -7,14 +7,14 @@
     src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
   ></script>
 
-<scirpt>
-var link = window.location.pathname.split('#')[1]
-z=document.createElement('zero-md')
+<scirpt type="module">
+var link = window.location.pathname.split('#')[1];
+z=document.createElement('zero-md');
 if (link != null){
   z.src='/'+link+'.md'
 } else {
   z.src='/readme.md'
-}
+};
 document.body.append(z)
 </scirpt>
 
