@@ -1,6 +1,6 @@
 <html>
 <head>
-  <
+  
   <!-- Import element definition -->
   <script
     type="module"
@@ -9,9 +9,16 @@
 
 </head>
 <body>
-
-  <!-- Profit! -->
-  <zero-md src="/2022-12-18.md"></zero-md>
+<scirpt>
+var link = window.location.pathname.split('?')[1]
+z=document.createElement('zero-md')
+if (link != null){
+  z.src='/'+link+'.md'
+} else {
+  z.src='/readme.md'
+}
+document.body.append(z)
+</scirpt>
 
 </body>
 </html>
