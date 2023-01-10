@@ -8,7 +8,7 @@
   ></script>
 
 <scirpt>
-var link = window.location.pathname.split('?')[1]
+var link = window.location.pathname.split('#')[1]
 z=document.createElement('zero-md')
 if (link != null){
   z.src='/'+link+'.md'
