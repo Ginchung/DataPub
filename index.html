@@ -32,14 +32,14 @@
     var link = window.location.href.split('=')[1];
     
     //先导航，后内容
-    z_nav=document.createElement('zero-md');
+    var z_nav=document.createElement('zero-md');
     if (link != null){
       z.src='/'+nav+'.md';
     };
     document.body.append(z_nav)
     
     
-    z=document.createElement('zero-md');
+    var z=document.createElement('zero-md');
     if (link != null){
       z.src='/'+link+'.md';
       document.title=link+' @ DataPub.jcli.site'
