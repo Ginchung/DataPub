@@ -20,12 +20,25 @@
   <!-- Import element definition -->
   <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
   
   <script type="text/javascript">
     var link = window.location.href.split('=')[1];
+    
+    //先导航，后内容
+    z_nav=document.createElement('zero-md');
+    if (link != null){
+      z.src='/'+nav+'.md';
+    };
+    document.body.append(z_nav)
+    
+    
     z=document.createElement('zero-md');
     if (link != null){
       z.src='/'+link+'.md';
@@ -35,6 +48,7 @@
       document.title='Index @ DataPub.jcli.site | Life Traveler 生活探索者'
     };
     document.body.append(z)
+
   </script>
 </body>
 </html>
