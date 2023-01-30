@@ -1,6 +1,7 @@
 idea inspired
 
 # Post
+- [2023-01-30 做哲学](https://datapub.jcli.site/index.html?blog=2023-01-30)
 - [2023-01-11 做H5增长，需要哪些框架](https://datapub.jcli.site/index.html?blog=2023-01-11)
 - [2023-01-10 一些Markdown框架汇总](https://datapub.jcli.site/index.html?blog=2023-01-10)
 - [2022-12-26 文艺复兴的邀请](https://datapub.jcli.site/index.html?blog=2022-12-26)
