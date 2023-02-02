@@ -1,7 +1,12 @@
 idea inspired
 
 # Post
+- [2023-02-01 数据描述符：备忘](https://datapub.jcli.site/index.html?blog=2023-02-01)
+- [2023-01-30 计算机技术：MPI依赖库的安装](https://datapub.jcli.site/index.html?blog=2023-01-30a)
+- [2023-01-30 《做哲学》](https://datapub.jcli.site/index.html?blog=2023-01-30)
 - [2023-01-30 做哲学](https://datapub.jcli.site/index.html?blog=2023-01-30)
+- [2023-01-18 从BEP想到的人生](https://datapub.jcli.site/index.html?blog=2023-01-18)
+- [2023-01-16 史学](https://datapub.jcli.site/index.html?blog=2023-01-16)
 - [2023-01-11 做H5增长，需要哪些框架](https://datapub.jcli.site/index.html?blog=2023-01-11)
 - [2023-01-10 一些Markdown框架汇总](https://datapub.jcli.site/index.html?blog=2023-01-10)
 - [2022-12-26 文艺复兴的邀请](https://datapub.jcli.site/index.html?blog=2022-12-26)
