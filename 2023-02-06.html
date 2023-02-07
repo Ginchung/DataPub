@@ -1,0 +1,488 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=heatmap-cartesian&code=PTAEAcCcFMBdYJbUgWgQcwHYHsYCgBjbTAZ1lAAtsBXSE0AXlAG09R3QByAQUwBMAhgFsBmUKL6gAcgiIAjAZFABJEgBsJJTgBouvPhUgDQABSN9oJCjq6BEI0C0coF-1QPOhgdWVADOqAuZRs8SJYT4AQgLoIoimkNgAbgiYBNBBCBSKPgDCyfwYita6nOnJ8Agk6Nk-ACICfEbi_NIhiqAAEgJR0GoINZIVImISoGUI1OVtFAg-AOLYAhPUAFaKArA-zZAAnqLTuY0IIgTJahGVljlcAFLCQtSdoADSAlZCCJA-p8mQANYZfD53kJiLAnemy4N2QAg0PgAMtQhHJYh0zNFYvEfABZSoUY4RJFxBK5dEGdaHCxWNECN73CiwIxkzAIcC0NHQdD7ATrNEIABeuACuSk9Q0_B8AHk-EVkj4TNQ-NQ9sg1pLqJh5nIfAAlATzMgZHwAZQQ73eOx8ABVhAgDvyZaa2qISv9TZB6bRgZwAKrwBpmI6k3Ie2ALT4SHwAdUs5EC0EwJTUnDwAF0ANx4EAQGCFZBoLC4aCEYhkUCCVb0JisDh6fjCUTXGTyBqqQV8LS5fSGYzekknTgOFwebwtvy8rjBUKLBGRGK4xJvNJfLKQLv5RaIYqlXIVKrGPr8kpKZqtdrXbrVvoDIbrkZjXKTV3jOYLJZbRTrB1bHYCPbg4nHF4XK59O4HieF43iDIVcl-f4AyBH4wQhXJoVheFsUnFF8QxLFEVQvEuAJCgiQ7H90IpKxqVddE6QZZ58WZVl2XxLkeSEHwd3BYNclFcVXSlGU5UgBVcilZUBFVXINS1WAdVyfVDWNXIzUeS1KnPLgTVtaMNkdZ0aT9T0lEI30uH9QMvlDcNQEjDTYwTZNUygOBEEzDAcHwIhSHIQQA0YFg8GYAAGbQAoADgAJgAZnjbRfICgBWbQwoARki6LtASgA2bQABYIqi_z4oyhK_Jy3yEtS7Qgr8vzkuYUq4pCqrctKgBObQQuq0qEo69rUsy7QYu6hK4qSxrUoKhqStSgB2Vruvq1Lipq1rSpCtqRpCjLVomkKgpmtaWqa7rEqyw6Qu0JrhomsLeoShbSrCjbqtO07Csq6qwvi8qYrSt6-vin6Wou5h3sG8qfvS1KfpC2rIdOybId6zagdaoaEsR971oh3L3quzHfOxjKFt667KvG5ghr66q4ripqYv63LqeO-nUq6pnUdxsnUrizLKdG9m6oCwG6uhpmMcRuqdsF-KWd8uKwuenmcaChWMqV3KMoyybMrp3yMpalbqoKp7EY2gLEoNpbWu-tXWp2ybSY2lrMu562ccy0npul5hpu9vznd86aAeqj27qD3nAemuaQsm8OLcK0PRfjwPcumnGFpTgnqp2naadJiXatJgH2ZauKrd8_btEmsKC-Z0HcoB2HqoB4HG56ouw5bhKPZbua_eYPWOtVsvLbb7aKbr1r9rh8ejsBlqcc6ha54y7WaoF4K0t7wrWoCqP2p3jq48ajr2c637AdPgHSdP0-gsmxHr_lo_26fubUfa5bltu5aJfv5bHff-KRNB41TugVFebMqbtVOgVKBZ18qwNPvfZ6sMgrn2es3Rqz0YGYKmifJ6AtYFQyloQ224Cnpz1uqdHGu8cFhSGrA-6Y8SrAxPu9Yu7VgaP2YfNCubsOGt3qvfYG2DuFEPCvw0eCUDqNXRknbhOMp4lWuhXdqvV6GNV6uwjRPCmq3Wur1NKIVN7XV1vfa6XdtGv1URbTW1jR5pUUTVBGcinFSxPr1OWu0lGAL-toxh212rk1urLKagTfqTWASDFxIMQZBXumEohpcap1SoY4kGRiVGNTqlzBJGswnUPyRnRqBUzrtWXr4kqusKk1QKp7cGCU1GbwKirbKZTcFNO3tU8GYjz4bRETUm2J8HaZMqW4uhbTPFJPBjjKZBN-mdzKg09q00cmNQDqlK-wcvE1Q9k9ZZrcpkew2uAj201QqHM6ZvCOy0TnD1uhHHa9yJ6pUiSnO6mz4p7LWT4_W3zGHgIlhLEm7UAaX1erlV-1S5rqN8nNCOpM5pz0egLUqjjX79MjsFCqyKLYxTRTvDFO8JY4pClo2FptrqAzmow4BRDSq9yIbLR6zVa6woPqy5gdKqHMp4VSjqvVaUdQygyjqFi2WdPiRCj-5UAlSuHnywZSSxFks5XdT2RDPGIw1b1Sa0jxWMIWitD6QU9Wcueik01RqjVpXSo9J6QC7XIxeY9dGwNgUQo8RXBFajAGPWukNGKhqEbPUrn61qai0qWpCVdLVVMRmcoDdoJVQttkhRSYzWF2Sk2yszcPFeaa3GxvyhmzlJT80E3ZhjIWj0NaVqqUq2pdbOZQuaamgqYrS2dM6jW2OVLjltuHudBlwy-1jJ7Z44dPjy3FstRHD27rYUS1TTtJlEKdoYuzqlLVedw2PR_vFfNEt3qHtbmFWlEsN2dO3RbcZa7BmTUmkqnapKep7s-ZWx5aiEWPIxYXBlxdK3l1RgigG9LHr1w5S-6Z4HcFUr1gFS1_dX0Qr1rbGDL7dVwbcVh1O-al7syrvFNe4K8bH1NUdOKjijoqpnstN6_KCNCrOsAmeuz6MSvY3SleR0C2Ax40U0jgy-N_yTexo6qCklHUmWJ4mYnhVvWepzFjp1qYKbgWjZ6ntPENOqdpgqC1tMds1TvNTdKqNPXk1jJ6xKrPPL41QsDtnPERI0z4gzVD-lhWxm6kjQNlF8Z9QZzRRG3qUo2aFrdBGTFRcuRFohWs4srriy1KjHiBUxVJqnYVfGGZvyxkNBu-WLbkfFiWuhzzuOywMSx2WcUTXcZKXxitTWz5o3rW9Rtg0OuRZazpljraWuv17v41F3WE5Yw2jZvGI7usz1m9dE1s2NZ8LYKAeMq32AADoRDgAABQADMlQEEQMQUAu2ECwGgEIAAlKAAA3ht0A6ZaBiGYBdq7NVIqgHe0IfyX2fucvjKAAAPsDrgKBOBJjwAAX2u8mbA4ATtiCYA99gsBsDYDUIgcAAAue7j3wDYBIBdhAxA8ecHR-AOM7BodRXYOgJ0fA8eo44JiDAVJycVQAKQ6Ee5T8nhUeerdp6tgAHtwUXRRmd89WOAaA5OCCLGZLgVYvPyyeQEHjqgtASB044CQcA7RYDcBgJr_H5Z2BWGwAAdzx9SaguZyzQ-F3r1YEupfm44LAWX8uuCK8u-gFXauOAa7x0WXXj2DdG5N9AM3LPyxW9t6Ae3juODO5p3rmIJBqDgnRLjz37BHiYDxwFR7IhRd45enr9giu1AEGoBoOQahfcp-r6AXASBMCwHJ1QJ03Iu_gmD-wZv-3u9-6jJd6ij25DYHgNgIQ5O_JC4z6tkgyAkAkDx2WDg8eOD_CEL7zgQk9igFSIob4be0c-577H2AO2h8h4BGHgEl_QCN7aNLi3-uqBJ_2-CNfj2K-X-V24AyQxOm-BeFuP2uo3uzen-X-3-lQNugQagtAlepeCBiBfANuqQmOuA5OkA6ACgu2AUoApB5Bm2MU121OCB6eFudBNOq2620OiYQAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    // prettier-ignore
+const hours = [
+    'Andaman and Nicobar Islands', 'Andhra Pradesh', '我中国藏南地区', 'Assam', 'Bagmati Province', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lumbini Province', 'Madhesh Province', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'
+];
+// prettier-ignore
+const days = [
+    'Andaman and Nicobar Islands', 'Andhra Pradesh', '我中国藏南地区', 'Assam', 'Bagmati Province', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lumbini Province', 'Madhesh Province', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'
+];
+// prettier-ignore
+const data = [
+[0,0,823],
+[0,5,31],
+[0,16,43],
+[0,36,103],
+[1,1,800],
+[1,5,20],
+[1,9,2],
+[1,11,1],
+[1,14,5],
+[1,15,1],
+[1,16,10],
+[1,17,2],
+[1,20,13],
+[1,21,22],
+[1,26,2],
+[1,28,2],
+[1,29,9],
+[1,31,4],
+[1,32,91],
+[1,34,13],
+[1,36,2],
+[2,2,1000],
+[3,3,856],
+[3,5,3],
+[3,9,1],
+[3,15,8],
+[3,16,1],
+[3,21,5],
+[3,22,7],
+[3,24,2],
+[3,25,112],
+[3,26,1],
+[3,34,1],
+[3,36,3],
+[4,4,1000],
+[5,1,5],
+[5,5,955],
+[5,9,4],
+[5,11,1],
+[5,12,1],
+[5,15,4],
+[5,16,1],
+[5,20,1],
+[5,21,5],
+[5,26,2],
+[5,28,1],
+[5,31,1],
+[5,32,1],
+[5,34,8],
+[5,36,8],
+[6,6,745],
+[6,9,22],
+[6,12,22],
+[6,20,31],
+[6,21,26],
+[6,28,70],
+[6,29,44],
+[6,34,40],
+[7,1,1],
+[7,7,704],
+[7,9,1],
+[7,11,3],
+[7,16,1],
+[7,20,271],
+[7,21,10],
+[7,26,2],
+[7,29,1],
+[7,34,3],
+[7,36,3],
+[8,8,950],
+[8,11,50],
+[9,1,1],
+[9,5,6],
+[9,9,730],
+[9,11,8],
+[9,12,7],
+[9,13,1],
+[9,14,1],
+[9,16,1],
+[9,17,1],
+[9,20,4],
+[9,21,18],
+[9,26,1],
+[9,28,5],
+[9,29,97],
+[9,31,1],
+[9,34,113],
+[9,36,5],
+[10,10,864],
+[10,20,27],
+[10,21,110],
+[11,1,1],
+[11,5,1],
+[11,9,10],
+[11,11,872],
+[11,12,1],
+[11,16,1],
+[11,20,12],
+[11,21,23],
+[11,28,12],
+[11,29,4],
+[11,34,48],
+[11,36,15],
+[12,5,5],
+[12,6,1],
+[12,9,36],
+[12,11,2],
+[12,12,781],
+[12,13,1],
+[12,16,1],
+[12,17,1],
+[12,20,1],
+[12,21,31],
+[12,28,75],
+[12,29,33],
+[12,34,27],
+[12,35,1],
+[12,36,5],
+[13,1,1],
+[13,9,5],
+[13,12,1],
+[13,13,740],
+[13,14,202],
+[13,16,1],
+[13,21,23],
+[13,28,19],
+[13,29,1],
+[13,34,7],
+[14,1,7],
+[14,5,1],
+[14,9,5],
+[14,13,93],
+[14,14,624],
+[14,16,92],
+[14,17,1],
+[14,20,1],
+[14,21,74],
+[14,28,67],
+[14,29,1],
+[14,31,1],
+[14,32,2],
+[14,34,3],
+[14,36,28],
+[15,1,3],
+[15,3,17],
+[15,5,78],
+[15,9,1],
+[15,15,836],
+[15,21,6],
+[15,22,37],
+[15,24,7],
+[15,25,4],
+[15,26,7],
+[15,34,2],
+[15,36,3],
+[16,1,9],
+[16,5,3],
+[16,9,3],
+[16,11,1],
+[16,14,54],
+[16,16,843],
+[16,17,4],
+[16,20,3],
+[16,21,21],
+[16,26,1],
+[16,28,1],
+[16,29,7],
+[16,31,35],
+[16,32,6],
+[16,34,6],
+[16,36,1],
+[17,1,14],
+[17,5,4],
+[17,9,10],
+[17,11,2],
+[17,12,2],
+[17,14,6],
+[17,16,25],
+[17,17,826],
+[17,20,4],
+[17,21,25],
+[17,26,3],
+[17,28,3],
+[17,29,18],
+[17,31,30],
+[17,32,2],
+[17,34,22],
+[17,36,5],
+[18,18,1000],
+[19,19,1000],
+[20,1,3],
+[20,5,1],
+[20,7,20],
+[20,9,3],
+[20,11,7],
+[20,16,1],
+[20,20,880],
+[20,21,57],
+[20,26,1],
+[20,28,1],
+[20,29,5],
+[20,34,11],
+[20,36,8],
+[21,1,4],
+[21,5,3],
+[21,9,8],
+[21,11,8],
+[21,12,3],
+[21,13,1],
+[21,14,8],
+[21,16,4],
+[21,17,1],
+[21,20,36],
+[21,21,828],
+[21,26,1],
+[21,28,6],
+[21,29,5],
+[21,31,1],
+[21,32,2],
+[21,34,79],
+[21,36,3],
+[22,3,89],
+[22,15,229],
+[22,22,616],
+[22,24,48],
+[22,25,18],
+[23,23,1000],
+[24,3,70],
+[24,5,34],
+[24,15,153],
+[24,22,173],
+[24,24,569],
+[25,3,342],
+[25,5,7],
+[25,15,6],
+[25,21,2],
+[25,22,4],
+[25,25,628],
+[25,26,5],
+[25,31,2],
+[25,36,4],
+[26,1,5],
+[26,3,1],
+[26,5,21],
+[26,7,1],
+[26,9,6],
+[26,11,1],
+[26,15,3],
+[26,16,2],
+[26,17,1],
+[26,20,11],
+[26,21,11],
+[26,25,2],
+[26,26,914],
+[26,29,1],
+[26,31,3],
+[26,32,4],
+[26,34,5],
+[26,36,9],
+[27,27,1000],
+[28,1,2],
+[28,5,3],
+[28,6,1],
+[28,9,12],
+[28,11,24],
+[28,12,35],
+[28,13,5],
+[28,14,38],
+[28,16,1],
+[28,20,2],
+[28,21,35],
+[28,28,776],
+[28,29,14],
+[28,32,1],
+[28,34,50],
+[28,36,1],
+[29,1,4],
+[29,5,1],
+[29,9,120],
+[29,11,4],
+[29,12,8],
+[29,16,3],
+[29,17,1],
+[29,20,9],
+[29,21,14],
+[29,28,7],
+[29,29,791],
+[29,31,1],
+[29,34,35],
+[29,36,1],
+[30,30,1000],
+[31,1,9],
+[31,5,7],
+[31,9,5],
+[31,11,2],
+[31,14,1],
+[31,16,98],
+[31,17,12],
+[31,20,3],
+[31,21,15],
+[31,25,1],
+[31,26,3],
+[31,28,1],
+[31,29,6],
+[31,31,816],
+[31,32,6],
+[31,34,10],
+[31,36,4],
+[32,1,158],
+[32,5,9],
+[32,9,2],
+[32,11,1],
+[32,14,3],
+[32,16,13],
+[32,17,1],
+[32,20,2],
+[32,21,17],
+[32,26,4],
+[32,28,1],
+[32,29,1],
+[32,31,4],
+[32,32,782],
+[32,34,3],
+[32,36,1],
+[33,33,1000],
+[34,1,1],
+[34,5,3],
+[34,9,30],
+[34,11,10],
+[34,12,1],
+[34,16,1],
+[34,20,4],
+[34,21,45],
+[34,28,5],
+[34,29,7],
+[34,34,850],
+[34,36,41],
+[35,9,12],
+[35,12,7],
+[35,21,9],
+[35,28,4],
+[35,29,5],
+[35,34,68],
+[35,35,895],
+[36,1,1],
+[36,3,1],
+[36,5,12],
+[36,9,6],
+[36,11,15],
+[36,12,1],
+[36,14,8],
+[36,16,1],
+[36,20,14],
+[36,21,7],
+[36,26,2],
+[36,28,1],
+[36,29,1],
+[36,31,1],
+[36,34,189],
+[36,36,740]
+  ]
+    .map(function (item) {
+    return [item[1], item[0], item[2] || '-'];
+});
+option = {
+  tooltip: {
+    position: 'top'
+  },
+  grid: {
+    
+    top: 30,
+    bottom: 60
+  },
+  xAxis: {
+    type: 'category',
+    data: hours,
+    splitArea: {
+      show: true
+    }
+  },
+  yAxis: {
+    type: 'category',
+    data: days,
+    splitArea: {
+      show: true
+    }
+  },
+  visualMap: {
+    min: 0,
+    max: 100,
+    calculable: true,
+    orient: 'horizontal',
+    left: 'center',
+    bottom: '0%'
+  },
+  /* dataZoom: [
+    {
+        show: false,
+        realtime: false,
+        start: 65,
+        end: 85
+    },
+    {
+        type: 'inside',
+        realtime: true,
+        start: 45,
+        end: 85
+    }
+],*/
+  series: [
+    {
+      name: 'Punch Card',
+      type: 'heatmap',
+      data: data,
+      label: {
+        show: true
+      },
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
