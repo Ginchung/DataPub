@@ -17,7 +17,7 @@ idea inspired
 - [2022-12-18 Echarts动态排名](https://datapub.jcli.site/examples/echart-rank.html)
 - [Idea Pool](https://datapub.jcli.site/index.html?blog=idea)
 
-<table class='sortable'>
+<table class="sortable">
   <tr>
     <th>Date</th>
     <th>Name</th>
