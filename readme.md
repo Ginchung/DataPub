@@ -1,6 +1,7 @@
 idea inspired
 
 # Post
+- [2023-02-06 我藏南+印度地区用户流通图（Android端）](https://datapub.jcli.site/2023-02-06.html)
 - [2023-02-01 数据描述符：备忘](https://datapub.jcli.site/index.html?blog=2023-02-01)
 - [2023-01-30 计算机技术：MPI依赖库的安装](https://datapub.jcli.site/index.html?blog=2023-01-30a)
 - [2023-01-30 《做哲学》](https://datapub.jcli.site/index.html?blog=2023-01-30)
