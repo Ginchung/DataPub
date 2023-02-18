@@ -1,8 +1,8 @@
 idea inspired
 
 # Post
-- [2023-02-06 **Note** 媒介进化论+内容推荐](https://datapub.jcli.site/index.html?blog=2023-02-17a)
-- [2023-02-06 **Tech** 普通人玩得起的NLP AI](https://datapub.jcli.site/index.html?blog=2023-02-17)
+- [2023-02-17 **Note** 媒介进化论+内容推荐](https://datapub.jcli.site/index.html?blog=2023-02-17a)
+- [2023-02-17 **Tech** 普通人玩得起的NLP AI](https://datapub.jcli.site/index.html?blog=2023-02-17)
 - [2023-02-06 **信息** 我藏南+印度地区用户流通图（Android端）](https://datapub.jcli.site/2023-02-06.html)
 - [2023-02-01 **Note** 数据描述符](https://datapub.jcli.site/index.html?blog=2023-02-01)
 - [2023-01-30 **Tech** 计算机技术：MPI依赖库的安装](https://datapub.jcli.site/index.html?blog=2023-01-30a)
